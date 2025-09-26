@@ -13,19 +13,21 @@
         android:theme="@style/Theme.BT5_GiaoDien1">
         <activity
             android:name=".GiaoDien2"
-            android:exported="false" />
-        <activity
-            android:name=".GiaoDien1"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true">   <!-- phải đặt true nếu activity có LAUNCHER -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".GiaoDien1"
+            android:exported="false" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
     </application>
 
 </manifest>
